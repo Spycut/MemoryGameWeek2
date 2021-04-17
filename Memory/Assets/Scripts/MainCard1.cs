@@ -16,4 +16,17 @@ public class MainCard1 : MonoBehaviour
         }
     }
 
+    private int _id;
+    public int id
+    {
+        get { return _id; }
+    }
+
+    public void ChangeSprite (int id, Sprite image)
+    {
+        _id = id;
+        GetComponent<SpriteRenderer>().sprite = image;
+    }
+
+
 }
